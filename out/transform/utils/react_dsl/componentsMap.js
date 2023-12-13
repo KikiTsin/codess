@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default={list:[{name:"Button",dependenceVersion:"*",dependence:{package:"antd",export_name:"Button",sub_name:null,destructuring:1},props:{disabled:!1,type:"primary"},state:{btnVisible:!1}}]};

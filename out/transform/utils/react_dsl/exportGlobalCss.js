@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});const{CSS_TYPE:e,prettierCssOpt:s}=require("./consts");function t(t,r){return new Promise((async l=>{const{prettier:n,dslConfig:o,_:a,folder:c=""}=r;o.globalCss&&o.inlineStyle!==e.INLINE_CSS?l([{panelName:"global.css",panelValue:n.format(t.css||"",s),panelType:"css",folder:c}]):l([])}))}exports.default=t;
