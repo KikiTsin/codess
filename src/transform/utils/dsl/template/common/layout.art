@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+      <meta charset="utf-8">
+      <title>{{title}}</title>
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="full-screen" content="yes">
+      <meta name="browsermode" content="application">
+      <meta name="x5-fullscreen" content="true">
+      <meta name="x5-page-mode" content="app">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="./assets/reset.css">
+      <script type="text/javascript" src="./assets/flexable.js"></script>
+      <link  rel="stylesheet" href="./assets/poppy.rem.min.css">
+      <script type="text/javascript" src="./assets/vue.min.js"></script>
+      <script type="text/javascript" src="./assets/poppy.rem.min.js"></script>
+      {{block 'head'}}
+      {{/block}}
+  </head>
+  <body>
+      {{block 'styleraw'}}{{/block}}
+      {{block 'content'}}{{/block}}
+  </body>
+  {{block 'scripturl'}}{{/block}}
+  {{block 'scriptraw'}}{{/block}}
+</html>

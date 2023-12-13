@@ -1,0 +1,62 @@
+{
+  "name": "codess",
+  "displayName": "codess",
+  "publisher": "kikitsin",
+  "description": "",
+  "icon": "images/icon.jpeg",
+  "repository": {},
+  "keywords": [
+    "d2c",
+    "设计稿直出"
+  ],
+  "version": "1.0.1",
+  "engines": {
+    "vscode": "^1.79.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "d2c.transform",
+        "title": "codess"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile && npm run terser",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "terser": "node terser.mjs",
+    "buildcode": "node test.mjs"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.79.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "@vscode/test-electron": "^2.3.2",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "axios-socks5-agent": "^1.0.5",
+    "css": "^3.0.0",
+    "fs-extra": "^11.1.1",
+    "globby": "^13.2.2",
+    "lodash": "^4.17.21",
+    "terser": "^5.18.2",
+    "prettier": "^2.4.1"
+  }
+}

@@ -1,0 +1,30 @@
+{{extend '../common/layout.art' }}
+
+{{block 'title'}}{{title}}{{/block}}
+
+{{block 'head'}}
+    <link rel="stylesheet" href="index.rem.css">
+{{/block}}
+
+{{block 'content'}}
+<div id="app">
+{{@ template}}
+</div>
+{{/block}}
+{{block 'scriptraw'}}
+<script type="text/javascript">
+  Vue.use(poppy);
+  var app = new Vue({
+    el: '#app',
+    data: () => {
+      return {
+        {{@ datas.join(',') }}
+      }
+    },
+    methods: {
+      {{@ methods.join(',') }}
+    },
+    {{lifeCycles.join(',\n')}}
+  })
+</script>
+{{/block}}
