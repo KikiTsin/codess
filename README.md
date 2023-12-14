@@ -14,16 +14,16 @@
 
 ## 如何使用？
 
-![如何使用](./.github/resources/how-to-use.gif)
+![如何使用](./resources/how-to-use.gif)
 
 ### 使用imgcook导出
 
-![使用imgcook导出](./.github/resources/imgcook_figma_plugin.png)
+![使用imgcook导出](./resources/imgcook_figma_plugin.png)
 
 ### 打开Codess VSCode插件
 
-![打开Codess VSCode插件](./.github/resources/cmd+shift+p.png)
+![打开Codess VSCode插件](./resources/cmd+shift+p.png)
 
-![点击导出](./.github/resources/codess_vscode_plugin.png)
+![点击导出](./resources/codess_vscode_plugin.png)
 
 **Enjoy!**
