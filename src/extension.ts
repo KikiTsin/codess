@@ -18,12 +18,20 @@ function getHtmlForWebview(
   webview: vscode.Webview,
   context: vscode.ExtensionContext
 ) {
-  const scriptPathOnDisk = vscode.Uri.joinPath(context.extensionUri, 'assets', 'index.js');
+  const scriptPathOnDisk = vscode.Uri.joinPath(
+    context.extensionUri,
+    'assets',
+    '/index.js'
+  );
   // // And the uri we use to load this script in the webview
   const scriptUri = webview.asWebviewUri(scriptPathOnDisk);
 
   // // Uri to load styles into webview
-  const stylesPathMainPath = vscode.Uri.joinPath(context.extensionUri, 'assets', 'index.css');
+  const stylesPathMainPath = vscode.Uri.joinPath(
+    context.extensionUri,
+    'assets',
+    '/index.css'
+  );
   const stylesMainUri = webview.asWebviewUri(stylesPathMainPath);
 
   const nonce = getNonce();

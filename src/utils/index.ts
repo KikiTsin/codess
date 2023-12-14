@@ -5,7 +5,7 @@ export function getWebviewOptions(
 ): vscode.WebviewOptions & vscode.WebviewPanelOptions {
   return {
     enableScripts: true,
-    localResourceRoots: [vscode.Uri.joinPath(extensionUri, 'dist')],
+    localResourceRoots: [vscode.Uri.joinPath(extensionUri, 'assets')],
     retainContextWhenHidden: true,
     enableCommandUris: true,
   };
